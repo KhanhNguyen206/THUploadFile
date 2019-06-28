@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'com.khanhnn'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '5.1.8.RELEASE'
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.0'
+    compile group: 'jstl', name:'jstl', version: '1.2'
+}
